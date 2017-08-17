@@ -1,0 +1,67 @@
+<ion-view view-title="BILL">
+    <ion-content class="bill">
+        <div class="card card-customer">
+            <form class="form-customer">
+                <div class="list">
+                    <div class="row">
+                        <div class="col-50">
+                            <label class="item item-input item-md-label">
+                        <input type="text" placeholder="BILLNO" class="customer-input" ng-model="data.billno">
+                    </label>
+                        </div>
+                        <div class="col-50">
+                            <label class="item item-input item-md-label">
+                        <input type="date" placeholder="DATE" class="customer-input" ng-model="data.date">
+                    </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-50">
+                            <label class="item item-input item-md-label">
+                        <input type="text" placeholder="CUSTOMER" class="customer-input" ng-model="data.customer">
+                    </label>
+                        </div>
+                        <div class="col-50">
+                            <label class="item item-input item-md-label">
+                        <input type="text" placeholder="MOBILE" class="customer-input" ng-model="data.mobile">
+                    </label>
+                        </div>
+                    </div>
+                    <div class="row bar-calm">
+                        <div class="col">
+                            <label>Sno</label>
+                        </div>
+                        <div class="col">
+                            <label>I.Code</label>
+                        </div>
+                        <div class="col">
+                            <label>Name</label>
+                        </div>
+                        <div class="col">
+                            <label>Oty</label>
+                        </div>
+                        <div class="col">
+                            <label>Price</label>
+                        </div>
+                        <div class="col">
+                            <label>Total</label>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button class="button button-small  button-calm" ng-click="updateBillr()">
+                            Pay
+                        </button>
+                        <button class="button button-small  button-positive" ng-click="resetBill()">
+                            Reset
+                        </button>
+                        <button class="button button-small  button-assertive" ui-sref="app.home">
+                            Cancel
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </ion-content>
+    <ion-footer-bar class="bar-calm hide-on-keyboard-open"></ion-footer-bar>
+</ion-view>

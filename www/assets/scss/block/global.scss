@@ -1,0 +1,206 @@
+body
+{
+    font-family: $futura-medium;
+}
+.background-red
+{
+    background-color:$red-color;  
+}
+.background-yellow
+{
+    background-color:$yellow-color;
+    .home-icon{
+        width:25px;
+
+    }
+}
+.background-grey
+{
+    background-color:$grey-color; 
+}
+.button-red
+{
+    background-color:$red-color;
+    color:$white-color;
+    font-family:$futura-medium;
+}
+.button-yellow
+{
+    background-color:$yellow-color; 
+}
+.button-like,.button-comment
+{
+    font-size: 25px;
+    background-color: $text-box-grey-background;
+    padding: 1px 15px;
+    border-radius: 9px;
+    line-height:32px;
+    min-height: 30px; 
+    border-width: 0px;
+}
+.button
+{
+    font-family: $futura-medium;
+}
+.button-post
+{
+    color:$grey-color;
+    margin: 10px 0;
+    font-family:$futura-medium;
+}
+.button-camera
+{
+    font-size: 3em;
+    width: 100%;
+    border-radius: 0;
+    > img{
+        width:40px;
+        margin: 4px auto;
+    }
+}
+.button-photo-post
+{
+    width:100%;
+    padding: 5px 20px; 
+    img
+    {
+        width:32px;
+        margin: 4 auto;
+    }
+    i
+    {
+        vertical-align: inherit; 
+        font-family: $futura-medium;
+        font-size: 1.2em; 
+        padding: 0px 5px;
+    }
+}
+
+
+#cometchat 
+{
+    font-family:$futura-medium;
+} 
+.fileUpload 
+{
+    position: relative;
+    overflow: hidden;
+    input.upload  
+    {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+}
+
+.action-sheet
+{ 
+    .action-sheet-group
+    {
+        background-color: $yellow-color;
+        .action-sheet-title
+        {
+            color:$white-color;
+            background-color:$red-color;
+        }
+    }
+}
+
+ 
+
+
+//like-button-animation-effect
+.button-like-animation 
+{
+    position: relative;
+    -webkit-transition: color 0.7s;
+    transition: color 0.7s;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    &::after 
+    { 
+        position: absolute; 
+        top: 50%;
+        left: 50%;
+        margin: -35px 0 0 -35px;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        content: '';
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+.button-effect
+{
+    &::after 
+    {
+        background: rgba(145, 134, 134, 0.42);
+    }
+}
+
+.button-effect.activated
+{
+    &::after 
+    {
+        -webkit-animation: like-effect 0.3s forwards;
+        animation: like-effect 0.3s forwards;
+    }
+}
+
+@-webkit-keyframes like-effect
+{
+    0% 
+    {
+        -webkit-transform: scale3d(0.3, 0.3, 1);
+        transform: scale3d(0.3, 0.3, 1);
+    }
+    25%, 50% 
+    {
+        opacity: 1;
+    }
+    to 
+    {
+        opacity: 0;
+        -webkit-transform: scale3d(1.2, 1.2, 1);
+        transform: scale3d(1.2, 1.2, 1);
+    }
+}
+
+@keyframes like-effect
+{
+    0%
+    {
+        -webkit-transform: scale3d(0.3, 0.3, 1);
+        transform: scale3d(0.3, 0.3, 1);
+    }
+    25%, 50% 
+    {
+        opacity: 1;
+    }
+    to 
+    {
+        opacity: 0;
+        -webkit-transform: scale3d(1.2, 1.2, 1);
+        transform: scale3d(1.2, 1.2, 1);
+    }
+}
+
+.popup-showing.active{
+    .popup{
+        .popup-buttons{
+            button.button-positive{
+                background-color: $red-color!important;
+            }
+        }
+    }
+}
+
+.conversation-header-item{
+    color: #727272;
+}

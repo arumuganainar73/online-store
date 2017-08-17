@@ -1,0 +1,72 @@
+<ion-view view-title="ACCOUNTS">
+    <ion-content class="bill">
+        <div class="card">
+            <div>
+                <label>Date : {{currentDate}}</label>
+            </div>
+            <div class="add-setup-button">
+                <button class="button button-positive" ui-sref="app.addexpense">Setup</button>
+            </div>
+            <div class="list">
+                <label class="item item-input item-md-label">
+                <input type="text" placeholder="EXPENSE TYPE" ng-model="data.expenseType">
+            </label>
+                <label class="item item-input item-md-label">
+                <input type="text" placeholder="AMOUNT" ng-model="data.amount">
+            </label>
+                <label class="item item-input item-md-label">
+                <textarea type="text" placeholder="COMMONT" ng-model="data.comment"></textarea>
+            </label>
+
+            </div>
+             <div class="text-center">
+                <button class="button button-small  button-calm" ng-click="addAccounts()">
+                            Add
+                        </button>
+                <button class="button button-small  button-positive" ng-click="resetAccounts()">
+                            Reset
+                        </button>
+                <button class="button button-small  button-assertive" ui-sref="app.home">
+                            Cancel
+                        </button>
+            </div>
+            <div class="row bar-calm">
+                <div class="col">
+                    <label>Sno</label>
+                </div>
+                <div class="col">
+                    <label>Type</label>
+                </div>
+                <div class="col">
+                    <label>Amount</label>
+                </div>
+                <div class="col">
+                    <label>Comment</label>
+                </div>
+                <div class="col">
+                     <i class="icon ion-trash-a"></i>
+                </div>
+            </div>
+            <div class="row" ng-repeat="account in accounts">
+                <div class="col">
+                    <label>{{$index+1}}</label>
+                </div>
+                <div class="col">
+                    <label>{{account.expenseType}}</label>
+                </div>
+                <div class="col">
+                    <label>{{account.amount}}</label>
+                </div>
+                <div class="col">
+                    <label>{{account.comment}}</label>
+                </div>
+                <div class="col">
+                     <button class='button button-assertive button-small' ng-click="removeAccounts($index)"><i class="icon ion-trash-a"></i></button>
+                </div>
+            </div>
+           
+        </div>
+
+    </ion-content>
+    <ion-footer-bar class="bar-calm hide-on-keyboard-open"></ion-footer-bar>
+</ion-view>

@@ -1,0 +1,222 @@
+.bar-header
+{
+    /*    height:94px;  */
+    background-image: inherit;
+    .title.header-item  
+    {
+        font-family:$futura-medium;
+        font-size: 22px;
+/*        margin:25px 0;*/
+        text-transform: uppercase;
+        color: $grey-color;
+    }
+    .buttons.button 
+    {    
+        font-family:$futura-medium;
+        color:$backbutton-color;
+        font-size: 15px;
+        margin: 0 5px; 
+        .ion-android-arrow-back, .ion-ios-arrow-back
+        {
+            display: none;
+        }
+    }
+} 
+/*
+ion-nav-buttons
+{
+    .button-icon
+    {
+        svg.icon 
+        {
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            stroke-width: 0;
+            stroke: currentColor; 
+            fill: currentColor;
+        }
+    }
+}*/ 
+.fotos
+{
+    top:46px;
+
+}
+/*.has-header
+{
+    top:0;
+}*/
+.bar-subheader
+{
+    top:0;
+}
+.has-subheader
+{
+    top:44px;
+}
+.dashboard-view
+{
+    top:0; 
+}
+.dashboard-header 
+{ 
+    height: 44px;
+    .button-logout
+    {
+        position: absolute;
+        right:0;  
+        color:$red-color; 
+    }  
+}
+.dashboard-subheader
+{
+    top: 44px;  
+    height: 80px;
+}
+.has-dashboard-subheader
+{
+    top:124px; 
+}
+//photos 
+.bar-photos-header
+{
+    height: 50px;
+    .photos-header-content
+    {
+        font-family: $futura-medium;
+        color: $grey-color;
+        font-size: 1.2em;
+        padding: 5px 20px;
+    }
+}
+.bar-photos-subheader
+{
+    top: 50px;
+    height:50px;
+}
+.has-photos-header
+{
+    top:100px;
+}
+
+//ios not  full screen 
+.platform-cordova:not(.fullscreen).platform-ios
+{
+
+    .bar-header:not(.bar-subheader)
+        {
+        /*        height:94px;   */
+
+    } 
+
+    /*    .has-header
+        {
+            top:0;
+        }*/
+    .bar-subheader
+    {
+        top:0;
+    }
+    .has-subheader
+    {       
+        top:44px;
+    }
+    .dashboard-view
+    {
+        top:0; 
+    }
+    .dashboard-header 
+    { 
+        height: 44px;
+
+    }
+    .dashboard-subheader
+    {
+        top: 64px;  
+        height: 80px;
+    }
+    .has-dashboard-subheader
+    {
+        top:144px; 
+    }  
+    .bar-photos-subheader
+    {
+        top: 94px;
+    }
+    .has-header.has-photos-header
+    {
+        top:144px;
+    }
+}
+
+.platform-android{
+    .view-container{
+/*        .pane{
+            top:44px;
+        }*/
+       .dashboard-view.pane{
+            top:0;
+        }
+        .conversation iframe{
+            height: calc(100vh - 90px) !important;
+        }
+    }
+    
+}
+.platform-ios
+{
+     
+    .bar-header
+    {
+        .buttons-right.header-item
+        {
+            bottom: initial;
+        }
+    }
+}
+//changepassword
+.has-changepassword-header
+{
+    top:94px;  
+}
+
+i.ion-refresh{
+    font-size: 24px !important;
+}
+//conversation-header
+.conversation-header{
+    height: 70px !important;
+    .conversation-header-item{ 
+        margin: 8px 0;
+        font-size: 25px;
+        font-family: $futura-medium;
+        text-transform: uppercase;
+        color: $grey-color;
+    }
+    .buttons.button{
+        margin:5px; 
+    }
+}
+
+//keybord-open-login-page
+.keyboard-open
+{
+    .keyboard-open-pane
+    {
+        top:0;
+        .has-footer
+        {
+            bottom: 0;
+        }
+    } 
+    .has-changepassword-header, .has-forget-password-header
+    { 
+        top:0;   
+        bottom:0;
+        .login-logo
+        {
+            display: none;
+        }
+    } 
+}

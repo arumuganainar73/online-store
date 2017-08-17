@@ -1,0 +1,50 @@
+<ion-view view-title="REPORTS">
+    <ion-content>
+
+        <div class="text-center" ng-show="showButton">
+            <button class="button button-full  button-calm" ui-sref="app.salesreport">
+                            Sales
+                        </button>
+            <button class="button button-full  button-positive" ng-click="showAccountsReport()">
+                            Accounts
+                        </button>
+
+        </div>
+        <div class="list" ng-show="accountsReport">
+            <h4>Accounts</h4>
+            <div>
+                <label>Total :10</label>
+            </div>
+            <div>
+                <label>Total Amount: 223399</label>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label>Sno</label>
+                </div>
+
+                <div class="col">
+                    <label>Name</label>
+                </div>
+                <div class="col">
+                    <label>Amount</label>
+                </div>
+                <div class="col">
+                    <label>Search</label>
+                </div>
+                <div class="col">
+                    <label>Download</label>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="button button-small  button-calm" ng-click="PrintReport()">
+                            Print
+                        </button>
+                <button class="button button-small  button-positive" ng-click="backAccountsReport()">
+                            Back
+                        </button>
+            </div>
+        </div>
+    </ion-content>
+    <ion-footer-bar class="bar-calm hide-on-keyboard-open"></ion-footer-bar>
+</ion-view>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title></title>
+
+  <link rel="manifest" href="manifest.json">
+
+  <!-- un-comment this code to enable service worker
+          <script>
+            if ('serviceWorker' in navigator) {
+              navigator.serviceWorker.register('service-worker.js')
+                .then(() => console.log('service worker installed'))
+                .catch(err => console.log('Error', err));
+            }
+          </script>-->
+
+  <link href="assets/lib/ionic/css/ionic.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/lib/ion-md-input/css/ion-md-input.min.css" rel="stylesheet">
+  <link href="assets/lib/ionic-material/dist/ionic.material.min.css" rel="stylesheet">
+
+
+  <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+          <link href="css/ionic.app.css" rel="stylesheet">
+        -->
+
+  <!-- ionic/angularjs js -->
+  <script src="assets/lib/ionic/js/ionic.bundle.js"></script>
+  <script src="assets/lib/ionic-material/dist/ionic.material.min.js"></script>
+  <script src="assets/lib/ion-md-input/js/ion-md-input.min.js"></script>
+  <script src="assets/lib/ionic-image-lazy-loading/ionic-image-lazy-loading.js"></script>
+  <script src="assets/lib/angular-toastr-master/dist/angular-toastr.tpls.min.js"></script>
+  <script src="assets/lib/angular-xeditable/angular-xeditable.min.js"></script>
+  <script src="assets/lib/pouchdb/pouchdb.js"></script>
+
+  <!-- cordova script (this will be a 404 during development) -->
+  <script src="cordova.js"></script>
+
+  <!-- your app's js -->
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/app.js"></script>
+
+  <script src="assets/js/services/onlineStoreApi.js"></script>
+  <script src="assets/js/services/onlineStoreData.js"></script>
+  <script src="assets/js/services/onlineStorePopup.js"></script>
+  <script src="assets/js/services/onlineStoreLogin.js"></script>
+  <script src="assets/js/services/onlineStorePouchdb.js"></script>
+
+  <script src="assets/js/controller/LoginController.js"></script>
+  <script src="assets/js/controller/AppController.js"></script>
+  <script src="assets/js/controller/AccountsController.js"></script>
+  <script src="assets/js/controller/AdditemController.js"></script>
+  <script src="assets/js/controller/CustomerController.js"></script>
+  <script src="assets/js/controller/HomeController.js"></script>
+  <script src="assets/js/controller/ReportController.js"></script>
+  <script src="assets/js/controller/SalesReportController.js"></script>
+  <script src="assets/js/controller/SupplierController.js"></script>
+  <script src="assets/js/controller/BillController.js"></script>
+  <script src="assets/js/controller/SettingController.js"></script>
+  <script src="assets/js/controller/AddExpenseController.js"></script>
+  <script src="assets/js/controller/ItemlistController.js"></script>
+  <script src="assets/js/controller/ForgetPasswordController.js"></script>
+  <script src="assets/js/controller/TransactionController.js"></script>
+  <script src="assets/js/controller/PurchaseController.js"></script>
+  <script src="assets/js/controller/SalesController.js"></script>
+  <script src="assets/js/controller/PurchasereturnController.js"></script>
+  <script src="assets/js/controller/SalesreturnController.js"></script>
+  <script src="assets/js/controller/CashinController.js"></script>
+  <script src="assets/js/controller/CashoutController.js"></script>
+  <script src="assets/js/controller/ExpenseController.js"></script>
+</head>
+
+<body ng-app="online-store">
+
+  <ion-nav-view>
+
+  </ion-nav-view>
+
+</body>
+
+</html>

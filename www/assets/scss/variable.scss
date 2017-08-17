@@ -1,0 +1,46 @@
+$black-color:#000;
+$white-color:#fff;
+$yellow-color:#ffd100;
+$red-color:#d62518;
+$grey-color:#727272;
+$grey-active-color:#626262; 
+$text-box-grey-background:#e4e4e4;
+$tab-grey-background:#b3b3b3;
+$label-box-gray-background:#6d6666;
+$pink-color:#edc8c5;
+$backbutton-color:#7f7f7f ;
+$light-grey:#a1a1a1;
+$assertive-red:#ef473a;
+$sky-blue:#00BCD4; 
+$futura-medium:FUTURASTD-MEDIUM;
+$futura-bold:FUTURA-STD-BOLD;
+$futura-heavy:FUTURASTD-CONDENSEDBOLD;
+$futura-condensedextrabold:FUTURASTD-CONDENSEDEXTRABD;
+$futura-extra-bold:FUTURASTD-EXTRABOLD; 
+
+ 
+
+@font-face{
+    font-family: $futura-medium;
+    src: url(../fonts/FUTURASTD-MEDIUM.OTF) format("opentype");
+}
+
+@font-face{
+    font-family: $futura-heavy;
+    src: url(../fonts/FUTURASTD-HEAVY.otf) format("opentype");
+}
+
+@font-face{
+    font-family: $futura-condensedextrabold;
+    src: url(../fonts/FUTURASTD-CONDENSEDBOLD.OTF) format("opentype");
+}
+
+@font-face{
+    font-family: $futura-bold;
+    src: url(../fonts/FUTURASTD-CONDENSEDEXTRABD.OTF) format("opentype");
+}
+@font-face{
+    font-family: $futura-extra-bold;
+    src: url(../fonts/FUTURASTD-EXTRABOLD.OTF) format("opentype");
+}
+                

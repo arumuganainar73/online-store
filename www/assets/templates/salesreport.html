@@ -1,0 +1,69 @@
+<ion-view view-title="REPORTS">
+    <ion-content>
+
+        <form class="form-customer">
+
+            <div class="list" ng-show="showReport">
+                <div class="text-center">
+                    <button class="button button-small  button-calm" ng-click="todayReport()">
+                            Today
+                        </button>
+                    <button class="button button-small  button-positive" ng-click="weekReport()">
+                            Week
+                        </button>
+
+                </div>
+                <label class="item item-input item-md-label">
+                        <input type="text" placeholder="FROM" class="customer-input" ng-model="data.fromDate">
+                    </label>
+                <label class="item item-input item-md-label">
+                        <input type="text" placeholder="TO" class="customer-input" ng-model="data.toDate">
+                    </label>
+
+                <div class="text-center">
+                    <button class="button button-small  button-calm" ng-click="searchReport()">
+                            Search
+                        </button>
+                    <button class="button button-small  button-positive" ng-click="resetReport()">
+                            Reset
+                        </button>
+                    <button class="button button-small  button-assertive" ui-sref="app.home">
+                            Cancel
+                        </button>
+                </div>
+            </div>
+               <div class="list" ng-show="showReportList">
+              
+                    <h4>Sales</h4>
+            
+            <div class="row">
+                <div class="col">
+                    <label>Sno</label>
+                </div>
+
+                <div class="col">
+                    <label>Name</label>
+                </div>
+                <div class="col">
+                    <label>Amount</label>
+                </div>
+                <div class="col">
+                    <label>Search</label>
+                </div>
+                <div class="col">
+                    <label>Download</label>
+                </div>
+            </div>
+                <div class="text-center">
+                <button class="button button-small  button-calm" ng-click="PrintReport()">
+                            Print
+                        </button>
+                <button class="button button-small  button-positive" ng-click="backAccountsReport()">
+                            Back
+                        </button>
+            </div>
+            </div>
+        </form>
+    </ion-content>
+    <ion-footer-bar class="bar-calm hide-on-keyboard-open"></ion-footer-bar>
+</ion-view>

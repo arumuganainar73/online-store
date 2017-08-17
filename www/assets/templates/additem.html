@@ -1,0 +1,50 @@
+<ion-view view-title="ITEMS">     
+    <ion-content class="bill">
+        <div class="card card-item">
+            <div class="row item-block">
+                <div class="col card-item-photo">
+                    <div class="item-image-container">
+                        <img ng-src='{{picture}}' alt="img-icon"/>
+                    </div>                 
+                </div>
+                <div class="col col-bottom update-photo">
+                    <!--                    <button class="button button-red ion-ios-camera button-camera" ng-click='showActionsheet()'>   
+                                        </button>-->
+                    <button class="button button-assertive button-camera" ng-click='showActionsheet()'>Add Image   
+                        </button> 
+                </div>
+            </div>
+            <form class="form-item">       
+                <div class="list">
+                    <label class="item item-input item-md-label">
+                        <input type="text" placeholder="CODE" class="item-input" ng-model="data.code">
+                    </label>
+                    <label class="item item-input item-md-label">
+                        <input type="text" placeholder="NAME" class="item-input" ng-model="data.name">
+                    </label>
+                    <label class="item item-input item-md-label">
+                        <input type="text" placeholder="QUANTITY" class="item-input" ng-model="data.quantity">
+                    </label>
+                    <label class="item item-input item-md-label">
+                        <input type="text" placeholder="COMPANY" class="item-input" ng-model="data.company">
+                    </label>
+                    <label class="item item-input item-md-label">
+                        <input type="text" placeholder="PRICE" class="item-input" ng-model="data.price">
+                    </label>
+                    <div class="text-center">
+                        <button class="button button-small  button-calm" ng-click="addItem()">
+                            Add
+                        </button>
+                        <button class="button button-small  button-positive" ng-click="resetItem()">
+                            Reset
+                        </button>
+                        <button class="button button-small  button-assertive" ui-sref="app.itemlist">
+                            Cancel
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </ion-content>
+    <ion-footer-bar class="bar-calm hide-on-keyboard-open"></ion-footer-bar>
+</ion-view>

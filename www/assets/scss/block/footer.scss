@@ -1,0 +1,35 @@
+.footer-block
+{
+/*    height:24px;*/
+    bottom: 0;
+}
+.has-footer
+{
+/*    bottom: 118px;*/
+} 
+
+.event-footer
+{
+    background-color:$grey-color;
+    height: 100px; 
+    bottom:94px; 
+    .list
+    {
+        display:inline-flex;
+        .item
+        {
+            background-color: $tab-grey-background;
+            text-align:center;
+            margin-left: 1px;
+            margin-right: 1px;             
+        }
+        .item.active
+        {
+            background: $white-color;
+        }
+    }
+}
+.has-event-footer
+{ 
+    bottom:194px;
+}

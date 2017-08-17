@@ -1,0 +1,48 @@
+<ion-view view-title="CASH-OUT">     
+    <ion-content class="bill">
+        <div class="card card-item">
+            <div class="row item-block">
+                <div class="col card-item-photo">
+                    <div class="item-image-container">
+                        <img ng-src='{{picture}}' alt="img-icon"/>
+                    </div>                 
+                </div>
+                <div class="col col-bottom update-photo">
+                    <!--                    <button class="button button-red ion-ios-camera button-camera" ng-click='showActionsheet()'>   
+                                        </button>-->
+                    <button class="button button-assertive button-camera" ng-click='showActionsheet()'>Add Image   
+                        </button> 
+                </div>
+            </div>
+            <form class="form-item">       
+                <div class="list">
+                    <label class="item item-input item-md-label">
+                        <input type="text" placeholder="NAME" class="item-input" ng-model="data.name">
+                    </label>
+                    <label class="item item-input item-md-label">
+                        <input type="date" placeholder="DATE" class="item-input" ng-model="data.date">
+                    </label>
+            
+                    <label class="item item-input item-md-label">
+                        <input type="text" placeholder="ENTER PAID AMOUNT" class="item-input" ng-model="data.paidamount">
+                    </label>
+                    <label class="item item-input item-md-label">
+                        <input type="text" placeholder="DESCRIPTION" class="item-input" ng-model="data.description">
+                    </label>
+                    <div class="text-center">
+                        <button class="button button-small  button-calm" ng-click="addCashOut()">
+                            Add
+                        </button>
+                        <button class="button button-small  button-positive" ng-click="resetCashOut()">
+                            Reset
+                        </button>
+                        <button class="button button-small  button-assertive" ui-sref="app.transaction">
+                            Cancel
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </ion-content>
+    <ion-footer-bar class="bar-calm hide-on-keyboard-open"></ion-footer-bar>
+</ion-view>

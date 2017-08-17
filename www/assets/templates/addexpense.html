@@ -1,0 +1,59 @@
+<ion-view view-title="ACCOUNTS">
+    <ion-content class="bill">
+        <div class="card">
+            <div>
+                <label>Date : {{currentDate}}</label>
+            </div>
+            <div class="expense-text-center">
+                <label>Expence Setup</label>
+            </div>
+            <div class="list">
+                
+                <label class="item item-input item-md-label">
+                <input type="text" placeholder="EXPENSE ID" ng-model="data.expenseId">
+            </label>
+            <label class="item item-input item-md-label">
+                <input type="text" placeholder="EXPENSE TYPE" ng-model="data.expenseType">
+            </label>
+
+            </div>
+            <div class="text-center">
+                <button class="button button-small  button-calm" ng-click="addExpenses()">
+                            Add
+                        </button>
+                <button class="button button-small  button-positive" ng-click="resetExpenses()">
+                            Reset
+                        </button>
+                <button class="button button-small  button-assertive" ui-sref="app.home">
+                            Cancel
+                        </button>
+            </div>
+            <div class="row bar-calm">
+                <div class="col">
+                    <label>Sno</label>
+                </div>
+                <div class="col">
+                    <label>Type</label>
+                </div>
+                <div class="col">
+                     <i class="icon ion-trash-a"></i>
+                </div>
+            </div>
+            <div class="row" ng-repeat="expense in expenseslist">
+                <div class="col">
+                    <label>{{$index+1}}</label>
+                </div>
+                <div class="col">
+                    <label>{{expense.expenseType}}</label>
+                </div>
+                <div class="col">
+                     <button class='button button-assertive button-small' ng-click="removeExpense($index)"><i class="icon ion-trash-a"></i></button>
+                </div>
+            </div>
+           
+            
+        </div>
+
+    </ion-content>
+<ion-footer-bar class="bar-calm hide-on-keyboard-open"></ion-footer-bar>
+</ion-view>
